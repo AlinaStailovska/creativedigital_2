@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+@font-face{
+font-family: 'ProximaNova';
+src: url('../fonts/proximanova-bold-webfont.woff2');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'ProximaNova';
+src: url('../fonts/proximanova-reg-webfont.woff2');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'ProximaNova';
+src: url('../fonts/proximanova-light-webfont.woff2');
+font-weight: 200;
+font-style: normal;
+}
+
+$brand-color: #fefefb;
+$acccent-color: #665f60;
+$transition: all .5s ease;
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "PT Sans", Arial, sans-serif;
+	color: $brand-color;
+	font-size: 20px;
+	background-color: #ebebeb;
+}
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 1110px;
+	margin: 0 auto;
+
+}
+
+.creative {
+	background-image: url(../img/cretive_bg.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__btn {
+		width: 30px;
+		height: 30px;
+	}
+	&__h {
+		display: none;
+	}
+	&__logo {
+		margin-top: 35px;
+	}	
+	&__navbar {
+		text-transform: uppercase;
+		font-family: "ProximaNova", Arial, sans-serif; 
+		font-size: 23px;
+		font-weight: 600;
+		margin-top: 55px;
+	}
+	&__title {
+		font-family: "ProximaNova", Arial, sans-serif; 
+		font-size: 71px;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 200px 0 40px 0;
+		letter-spacing: 0;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 30px;
+		font-style: italic;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 400px;
+
+	}
+	&__information {
+		margin-top: 145px;
+		color: $brand-color;
+		padding: 0;
+	}
+}
+
+.about {
+	padding: 125px 0 120px 0;
+	&__bg {
+		width: 380px;
+		height: 555px;
+		background-image: url(../img/about_bg.png); 
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+	}
+	&__icon {
+		background-image: url(../img/abuot_icon.png); 
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin-top: 75px;
+	}
+	&__title {
+		margin-top: 40px;
+	}
+	&__text {
+		color: $acccent-color;
+		line-height: 23px;
+		&--top {
+			margin: 75px 0 25px 0;
+		}
+	}
+}
+
+.icon {
+		display: inline-block;
+		width: 50px;
+		height: 55px;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+.title {
+	text-transform: uppercase;
+	// font-family: "PT Sans",Arial, sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.text {
+	font-family: "PT Sans", Arial, sans-serif;
+	display: inline-block;
+}
+
+.button {
+	font-style: italic;
+	text-transform: capitalize;
+	padding: 15px 50px; 
+	background-color: transparent;
+	border: 1px solid;
+	margin-top: 80px;
+	transition: $transition;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $acccent-color;
+		color: $brand-color;
+		border-color: $acccent-color;
+	}
+}
+
+.services {
+	&__lg {
+		height:  800px;
+		background-image: url(../img/services_bg.png);
+	}
+	&__icon {
+		margin-top: 95px;
+		width: 65px;
+		height: 65px;
+		&--lg {
+			margin-top: 115px;
+		}
+		&--desing {
+			background-image: url(../img/desing.png); 
+			width: 50px
+		}
+		&--web {
+			background-image: url(../img/web.png);
+		}
+		&--mobile {
+			background-image: url(../img/mobile.png);
+	
+		}
+		&--seo {
+			background-image: url(../img/seo.png);	
+		}
+		&--services {
+			background-image: url(../img/services_icon.png); 	
+		}
+	}
+	&__title {
+		&--lg {
+		margin: 30px 0 120px 0;
+		}
+		&--sm {
+			font-size: 24px;
+		}
+	}
+	&__text {
+		font-size: 18px;
+		letter-spacing: -0.4px;
+		&--sm {
+			max-width: 210px;
+			margin: 0 auto;
+		}
+	}
+	&__sm {
+		height: 400px;
+		&--dark {
+			background-color: #dbdbdb;
+		}
+	}
+	&__rows {
+		padding: 0;
+		&--lg {
+			padding:0;
+		}
+	}
+}
+
+.slick-arrow {
+	opacity: 0.9;
+	width: 30px;
+	height: 40px;
+	color: transparent;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-color: transparent;
+  	border-color: transparent;
+  	position: absolute;
+  	top: 0;
+  	right: 0;	
+  	&:hover,
+	&:active,
+	&:focus {
+			opacity: 0.5;
+		}	
+}
+
+.slick-next {
+	background-image: url(../img/team_arrow_left.png);
+	top: 50%;
+	left: -5%;
+}
+
+.slick-prev {
+	background-image: url(../img/team_arrow_right.png);
+	top: 50%;
+  	right: -5%;	
+  	
+}
+
+.works {
+	background-image: url(../img/works-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0 60px 0;
+	position: relative;
+	.slick-next {
+	background-image: url(../img/works_arrow_left.png);
+	top: 50%;
+	left: -25%;
+	}
+	.slick-prev {
+	background-image: url(../img/works_arrow_right.png);
+	top: 50%;
+  	right: -25%;	
+	}
+	&__icon {
+		background-image: url(../img/works.png);
+		height: 65px;
+	}
+	&__title {
+		margin: 15px 0 65px 0;
+	}
+	&__btn a{
+		color: $brand-color;
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $brand-color;
+			color: $acccent-color;
+			border-color: $brand-color;
+		}
+	}
+	&__slider {
+		width: 65%;
+    	display: block;
+    	margin: 0 auto;
+	}
+	&__img {
+		width: 100%;
+	}
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px; 
+    & button {
+      background-color: transparent;
+      width: 10px;
+      height: 10px;
+      display: block;
+      font-size: 0;
+      padding: 5px;
+      border: 1px solid $brand-color;
+      border-radius: 50%; 
+ 	}
+    &.slick-active button {
+      background-color: $brand-color; 
+  	}
+ }
+
+.team {
+	font-family: "ProximaNova", Arial, sans-serif;
+	color: $acccent-color;
+	position: relative;
+	&__sl {
+		padding: 20px 30px 10px 20px;
+		background-color: #9f9acf;
+	}
+	&__icon {
+		background-image: url(../img/team.png);
+		width: 60px;
+		height: 65px;
+		margin: 50px 0 10px 0;
+	}
+	&__info {
+		background-color: #ffffff;
+		padding: 140px 0 50px 0;
+		margin-top: 195px;
+		position: relative;
+	}
+	&__foto {
+		position: absolute;
+		left: 0; right: 0;
+		top: 0; bottom: 0;
+		width: 260px;
+		height: 260px;
+		border-radius: 50%;
+		transform: translate(15%, -50%);
+	}
+	&__name {
+		color: #9f9acf;
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	&__position {
+		text-transform: capitalize;
+		font-style: italic;
+		margin: 25px 0 0 0;
+	}
+	&__sicials {
+		display: inline-block;
+		background-color: #9f9acf;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	&__social {
+		width: 30px;
+  		height: 30px;
+  		display: inline-block;
+  		margin-right: 15px;
+  		border-radius: 50%;
+  		background-size: cover;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		&:hover,
+		&:active,
+		&:focus {
+			opacity: 0.5;
+		}
+  		&__hover {
+			opacity: 0.5;
+  		}
+  		&--be {
+			background-image: url(../img/be.png);
+  		}
+  		&--in {
+			background-image: url(../img/in.png);
+  		}
+  		&--gl {
+			background-image: url(../img/gl.png);
+  		}
+  		&--fb {
+			background-image: url(../img/fb.png);
+  		}
+  		&--tw {
+			background-image: url(../img/tw.png);
+  		}
+	}
+	&__slider {
+		margin-bottom: 100px;
+	}
+	& ul.slick-dots{
+		opacity: 0.1;
+	}
+}
+
+#slick-slide-control02 {
+	margin-right: 40px;
+}
+
+.contact {
+		position: relative;
+		margin-bottom: 185px;
+	&__map {
+		height: 900px;
+	}
+
+	&__cover {
+		background-color: rgba(159, 154, 207, 0.5);
+		width: 100%;
+		height: 900px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__icon {
+		background-image: url(../img/contact.png);
+		height: 65px;
+		margin-top: 50px;
+	}
+	&__title {
+		font-family: "ProximaNova", Arial, sans-serif;
+		margin-bottom: 240px;
+	}
+}
+
+#map {
+  width: 100%;
+  height: 900px; 
+}
+
+.form {
+	width: 55%;
+	height: 285px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	margin: 0 auto;
+	color: #fff;
+	&__name {
+		width: 48%;
+		display: inline-block;
+		margin-right:3%; 
+		height: 55px;
+		background-color: rgba(255, 255, 255, 0.5);
+			color: #fff;
+			padding: 25px;
+	}
+	&__email {
+		width: 48%;
+		display: inline-block;
+		height: 55px;
+		background-color: rgba(255, 255, 255, 0.5);
+			color: #fff;
+			padding: 25px;
+	}
+	&__message {
+		width: 100%;
+		display: block;
+		margin-top: 3%;
+		height: 200px;
+		background-color: rgba(255, 255, 255, 0.5);
+			color: #fff;
+			padding: 25px;
+	}
+	&__button {
+	font-family: "ProximaNova", Arial, sans-serif; 
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 25px 70px;
+	border: 1px solid #9f9acf; 
+	border-radius: 5px;
+	color: #fff;
+	background-color: #9f9acf;
+	margin: 55px 0 55px 0;
+	box-shadow: 0 5px 0 #8783b0;
+		&:hover,
+		&:active,
+		&:focus {
+		border: 1px solid #9f9acf;
+		color: #9f9acf;
+		background-color: #fff;
+		}
+	}
+}
+
+@media screen and (max-width: $screen-sm ) {
+	.form {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: $screen-md ) {
+	.form__name,
+	.form__email {
+		width: 100%;
+		display: block;
+	}
+}
+
+.address,
+.phone {
+	width: 350px;
+	height: 90px;
+	display: flex;
+	position: absolute;
+	right: -255px;
+	&:hover,
+	&:active,
+	&:focus {
+		transform: translate(-255px, 0px) scale(1.0, 1.0) skew(0deg) rotate(0deg); 
+		transition: 1s ease-in;
+	}
+}
+
+.address {
+	top: 200px;
+}
+
+.phone {
+	top: 290px;
+}
+
+.image {
+		width: 90px;
+		height: 90px;
+		background-color: #9f9acf;
+		background-image: url(../img/address.png);
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		display: inline-block;
+  		&--phone {
+  			background-image: url(../img/phone.png);
+  		}
+  		&--arrow {
+  			opacity: 0.7;
+  			background-image: url(../img/arrow.png);
+  			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translate(-100%, -50%);
+			&:hover,
+			&:active,
+			&:focus {
+				opacity: 1;
+			}
+  		}
+	}
+
+.information {
+		width: 260px;
+		height: 100%;
+		color: $acccent-color;
+		text-transform: capitalize;
+		font-size: 18px;
+		font-weight: 200;
+		display: inline-block;
+		padding: 10px 30px;
+		background-color: #fff;
+		opacity: 0.5;
+	}
+
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+	font-style: italic;
+}
+
+.transition {
+	transition: $transition;
+}
